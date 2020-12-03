@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+        <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header id = 'heading'>Dog~Cat~Rat</header>
+        
+        <!-- The table of the rules for the game -->
+        <table id = 'rule-table'>
+            <tr>
+                <td class = 'rule-number'>0</td>
+                <td class = 'rule-text'>Click on a tile in any order.</td>
+            </tr>
+            <tr>
+                <td class = 'rule-number'>1</td>
+                <td class = 'rule-text'>You get up to 10 clicks.</td>
+            </tr>
+            <tr>
+                <td class = 'rule-number'>2</td>
+                <td class = 'rule-text'>It may be a dog, a cat or a rat.</td>
+            </tr>
+            <tr>
+                <td class = 'rule-number'>3</td>
+                <td class = 'rule-text'>Collect a total number of dogs and cats.</td>
+            </tr>
+            <tr>
+                <td class = 'rule-number'>4</td>
+                <td class = 'rule-text'>A rat is a no count. </td>
+            </tr>
+            <tr>
+                <td class = 'rule-number'>5</td>
+                <td class = 'rule-text'>Pick 3 dogs and 3 cats you win!</td>
+            </tr>
+        </table>
+
+        <!-- The row that has the incrementing score of cats and dogs -->
+        <div id = 'score-row'>
+            <div id = 'dog-score'>
+                Dogs: 0
+            </div>
+            <div id = 'cat-score'>
+                Cats: 0
+            </div>
+        </div>
+
+        <!-- The container for the grid of tiles -->
+        <div id = 'container'>
+            <img id = 'tile1' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile2' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile3' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile4' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile5' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile6' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile7' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile8' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile9' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile10' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile11' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile12' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile13' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile14' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile15' class = 'tile' src = "./resources/media/tile.jpg"/>
+            <img id = 'tile16' class = 'tile' src = "./resources/media/tile.jpg"/>
+        </div>
+
+        <!-- The winning game image -->
+        <div id = 'container2'>
+            <img class = 'game-result' src = "./resources/media/rats.jpg"/>
+        </div>
+
+        <!-- The losing game image -->
+        <div id = 'container3'>
+            <img class = 'game-result' src = "./resources/media/pk.jpg"/>
+        </div>
+
+        <!-- Button to replay the game on game over screen, won or lost -->
+        <div id = 'container4'>
+            <div id = 'replay-button'>
+                Replay
+            </div>
+        </div>
+
+        <!-- Button to start the game from the initial screen -->
+        <div id = 'container5'>
+            <div id = 'start-button'>
+                Play Game
+            </div>
+        </div>
+        <!-- <script src = './resources/js/script.js' type = 'text/javascript'></script> -->
+        <script src = './resources/js/script2.js' type = 'text/javascript'></script>
+    </body>
+</html>

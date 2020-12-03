@@ -1,0 +1,175 @@
+body {
+    background-color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+header {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 8vw;
+    text-shadow:  brown 2px 2px 2px;
+}
+
+#rule-table {
+    margin: auto;
+    width: 55%;
+}
+
+.rule-number {
+    text-align: right;
+    font-size: 3.25vw;
+    padding-right: 3%;
+    padding-top: 10px;
+    text-shadow:  brown 2px 2px 2px; 
+}
+
+.rule-text {
+    width: 77%;
+    vertical-align: middle;
+    font-size: 1.65vw; 
+    padding-top: 10px; 
+    text-shadow:  brown 2px 2px 2px;
+}
+
+#score-row {
+    display: none;
+    border: brown outset 4px;
+    background-color: #820da8;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 5px 20px 5px 20px;
+    justify-content: space-between;
+    width: 28%;
+    font-size: 2vw;
+    font-weight: 400px
+}
+
+/* The container for the tile grid */
+#container {
+    margin: 0 auto;
+    margin-top: 15px;
+    display: none;
+    flex-wrap: wrap;
+    align-content: flex-start;  
+    justify-content: center;
+    width: 50%;
+    height: 600px;
+}
+
+.tile {
+    width: 10vw;
+    height: auto;
+    border: brown outset 3px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 5px;  
+}
+
+/* The container for the lost game rat image */
+#container2 {
+    display: none; 
+    margin: 0 auto;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+    animation-duration: .5s;
+    animation-name: fadeIn;
+}
+
+/* Game over screen animation */
+@keyframes fadeIn {
+    from {
+      margin: 0 auto;
+      width: 80%; 
+    }
+  
+    to {
+      margin: 0 auto;
+      width: 20%;
+    }
+  }
+
+/* The container for the won game cat and dog image */
+#container3 {
+    display: none; 
+    margin: 0 auto;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+    animation-duration: .5s;
+    animation-name: fadeIn;
+}
+
+/* The won and lost images themselves */
+.game-result {
+    width: 100%;
+    height: auto;
+}
+
+/* The container for the replay button */
+#container4 {
+    margin: 0 auto;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 20px;
+}
+
+#replay-button {
+    border: green solid 1px;
+    display: none;
+    margin: 0 auto;
+    width: 80%;
+    height: 70%;
+    padding: 10px;
+    margin-bottom: 10%;
+    border: brown outset 4px;
+    background-color: #820da8;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+#replay-button:hover {
+    background-color:darkorchid;
+    border: darkmagenta inset 3px;
+}
+
+/* The container for the start button */
+#container5 {
+    margin: 0 auto;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 20px;
+}
+
+#start-button {
+    border: green solid 1px;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 70%;
+    padding: 10px;
+    margin-bottom: 15%;
+    margin-top: 5%;
+    border: brown outset 4px;
+    background-color: #820da8;
+    font-size: 1.75vw;
+    cursor: pointer;
+}
+#start-button:hover {
+    background-color:darkorchid;
+    border: darkmagenta inset 3px;
+}
+
+
+
+
+
+

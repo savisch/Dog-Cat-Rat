@@ -57,7 +57,7 @@ let tileSetter = (tileArray) => {
         tileClick(tileArray[i]);
         tileArray[i].src = tilePath;
     }
-}; 
+};
 
 /*Populates the playArray by running randomPathGenerator on each index of the tileArray and iterates through each 
 item in playArray and if a puppyPath adds 1 to the puppyNumber. If the next puppy is more than

@@ -2,7 +2,7 @@
 <html>
     <title></title>
     <head>
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
         <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     </head>
@@ -34,6 +34,10 @@
             <tr>
                 <td class = 'rule-number'>5</td>
                 <td class = 'rule-text'>Pick 3 dogs and 3 cats you win!</td>
+            </tr>
+            <tr>
+                <td class = 'rule-number'>6</td>
+                <td class = 'rule-text'>Choose a level to play game.</td>
             </tr>
         </table>
 
@@ -77,18 +81,38 @@
             <img class = 'game-result' src = "./resources/media/pk.jpg"/>
         </div>
 
-        <!-- Button to replay the game on game over screen, won or lost -->
+        <!-- Buttons to replay the game on game over screen, won or lost -->
         <div id = 'container4'>
-            <div id = 'replay-button'>
-                Replay
+            <div id="replay-text" class="rule-text">
+                <p>Choose a level to replay.</p>
+            </div>
+            <div id = 'level-buttons2' >
+                <div id = 'easy-button2' class="main-buttons">
+                    Easy
+                </div>
+                <div id = 'medium-button2' class="main-buttons">
+                    Medium
+                </div>
+                <div id = 'hard-button2' class="main-buttons">
+                    Hard
+                </div>
             </div>
         </div>
 
-        <!-- Button to start the game from the initial screen -->
+        <!-- Buttons to start the game from the initial screen -->
         <div id = 'container5'>
-            <div id = 'start-button'>
-                Play Game
+            <div id = 'level-buttons' >
+                <div id = 'easy-button' class="main-buttons">
+                    Easy
+                </div>
+                <div id = 'medium-button' class="main-buttons">
+                    Medium
+                </div>
+                <div id = 'hard-button' class="main-buttons">
+                    Hard
+                </div>
             </div>
+
         </div>
         <!-- <script src = './resources/js/script.js' type = 'text/javascript'></script> -->
         <script src = './resources/js/script2.js'></script>

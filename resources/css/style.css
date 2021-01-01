@@ -112,61 +112,66 @@ header {
 
 /* The container for the replay button */
 #container4 {
-    margin: 0 auto;
-    width: 20%;
-    height: auto;
-    text-align: center;
-    vertical-align: center;
-    padding-top: 20px;
-}
-
-#replay-button {
-    border: green solid 1px;
     display: none;
     margin: 0 auto;
-    width: 80%;
-    height: 70%;
-    padding: 10px;
-    margin-bottom: 10%;
-    border: brown outset 4px;
-    background-color: #820da8;
-    font-size: 1.5vw;
-    cursor: pointer;
-}
-
-#replay-button:hover {
-    background-color:darkorchid;
-    border: darkmagenta inset 3px;
-}
-
-/* The container for the start button */
-#container5 {
-    margin: 0 auto;
-    width: 20%;
+    width: 35%;
     height: auto;
     text-align: center;
     vertical-align: center;
     padding-top: 20px;
 }
 
-#start-button {
-    border: green solid 1px;
-    display: block;
+#replay-text {
+    width: 100%;
     margin: 0 auto;
-    width: 80%;
+    font-size: 2vw;
+}
+
+#level-buttons2 {
+    display: flex;
+    font-size: 1.1vw;
+}
+
+#medium-button2, #hard-button2 {
+    margin-left: 15%;
+}
+
+#container5 {
+    margin: 0 auto;
+    width: 45%;
+    height: auto;
+    text-align: center;
+}
+
+.main-buttons {
+    margin: 0 auto;
+    width: 60%;
     height: 70%;
     padding: 10px;
-    margin-bottom: 15%;
+    /* margin-bottom: 5%; */
     margin-top: 5%;
+    font-size: 1.75vw;
     border: brown outset 4px;
     background-color: #820da8;
-    font-size: 1.75vw;
     cursor: pointer;
 }
-#start-button:hover {
+
+.main-buttons:hover {
     background-color:darkorchid;
     border: darkmagenta inset 3px;
 }
+
+#level-buttons {
+    display: flex;
+    font-size: 1.1vw;
+    margin-top: 3%;
+    /* border: 1px solid red; */
+}
+
+#medium-button, #hard-button {
+    margin-left: 15%;
+}
+
 
 
 

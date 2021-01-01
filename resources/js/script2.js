@@ -14,6 +14,15 @@ let tileImage13 = document.getElementById('tile13');
 let tileImage14 = document.getElementById('tile14');
 let tileImage15 = document.getElementById('tile15');
 let tileImage16 = document.getElementById('tile16');
+let startContainer = document.getElementById('container5');
+let replayContainer = document.getElementById('container4');
+let easyButton = document.getElementById('easy-button');
+let mediumButton = document.getElementById('medium-button');
+let hardButton = document.getElementById('hard-button');
+let easyButton2 = document.getElementById('easy-button2');
+let mediumButton2 = document.getElementById('medium-button2');
+let hardButton2 = document.getElementById('hard-button2');
+
 
 const puppyPath = "./resources/media/puppy.jpg";
 const kittenPath = "./resources/media/kitten.jpg";
@@ -42,8 +51,8 @@ let backdrop = document.getElementById('container');
 let ruleTable = document.getElementById('rule-table');
 let gameLost = document.getElementById('container2');
 let gameWon = document.getElementById('container3');
-let gameReplay = document.getElementById('replay-button');
-let gameStart = document.getElementById('start-button');
+// let gameReplay = document.getElementById('replay-button');
+// let gameStart = document.getElementById('start-button');
 // Creates array of tile image variables
 let tileArray = [tileImage1, tileImage2, tileImage3, tileImage4, tileImage5, tileImage6, tileImage7, tileImage8, tileImage9, tileImage10, tileImage11, 
     tileImage12, tileImage13, tileImage14, tileImage15, tileImage16];
@@ -151,7 +160,7 @@ let winGame = () => {
     scoreRow.style.marginTop = '15px';
     backdrop.style.display = 'none';
     gameWon.style.display = 'block';
-    gameReplay.style.display = 'block';
+    replayContainer.style.display = 'block';
     playWin();
 };
 
@@ -162,7 +171,7 @@ let loseGame = () => {
     scoreRow.style.marginTop = '10px';
     backdrop.style.display = 'none';
     gameLost.style.display = 'block'; 
-    gameReplay.style.display = 'block';
+    replayContainer.style.display = 'block';
     playLoss();
 };
 
@@ -179,8 +188,8 @@ let gameOver = () => {
 /*Changes size of heading and margins, shows scoreRow and tile grid, hides ruleTable and start button, and runs the
 clickImageSetter and tileSetter fxns.*/
 let startGame = () => {
-    tilePlayCount = 12;
-    gameStart.style.display = 'none';
+    // tilePlayCount = 12;
+    startContainer.style.display = 'none';
     heading.style.fontSize = '6vw';
     heading.style.marginTop = '5px';
     heading.style.marginBottom = '10px';
@@ -195,11 +204,11 @@ let startGame = () => {
 /*Hides the gameWon or gameLost images and replay button, shows the tile grid, resets
 tilePlayCount/dogCount/catCount/puppyNumber/kittenNumber/innerHTML, and runs the clickImageSetter and tileSetter fxns.*/
 let replayGame = () => {
-    tilePlayCount = 12;
+    // tilePlayCount = 12;
     backdrop.style.display = 'flex';
     gameWon.style.display = 'none';
     gameLost.style.display = 'none';
-    gameReplay.style.display = 'none';
+    replayContainer.style.display = 'none';
     catCount = 0;
     dogCount = 0;
     puppyNumber = 0;
@@ -209,8 +218,40 @@ let replayGame = () => {
     tileSetter(tileArray);
     clickImageSetter();
 };
-// Runs startGame fxn on start button click
-gameStart.onclick = startGame;
 
-// Runs replayGame fxn on replay button click
-gameReplay.onclick = replayGame;
+// These functions set the tilePlayCount for the difficulty level and run startGame()
+function startGameEasy() {
+    tilePlayCount = 16;
+    startGame();
+}
+function startGameMedium() {
+    tilePlayCount = 13;
+    startGame();
+};
+function startGameHard() {
+    tilePlayCount = 10;
+    startGame();
+};
+// These functions set the tilePlayCount for the difficulty level and run replayGame()
+function replayGameEasy() {
+    tilePlayCount = 16;
+    replayGame();
+};
+function replayGameMedium() {
+    tilePlayCount = 13;
+    replayGame();
+};
+function replayGameHard() {
+    tilePlayCount = 10;
+    replayGame();
+};
+
+// Runs startGame fxn on level button click
+easyButton.addEventListener('click', startGameEasy);
+mediumButton.addEventListener('click', startGameMedium);
+hardButton.addEventListener('click', startGameHard);
+
+// Runs replayGame fxn on replay level button click
+easyButton2.addEventListener('click', replayGameEasy);
+mediumButton2.addEventListener('click', replayGameMedium);
+hardButton2.addEventListener('click', replayGameHard);
